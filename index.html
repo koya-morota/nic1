@@ -15,6 +15,38 @@
   text-shadow: #111 0px 0px 10px;
 }
 
+.btn_orange {
+	font-size:22px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #eeb44f;
+	padding:9px 18px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ffc477 9%, #fb9e25 96% );
+	background:-ms-linear-gradient( top, #ffc477 9%, #fb9e25 96% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(9%, #ffc477), color-stop(96%, #fb9e25) );
+	background-color:#ffc477;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:1px 1px 0px #cc9f52;
+ 	-webkit-box-shadow:inset 1px 1px 0px -8px #fce2c1;
+ 	-moz-box-shadow:inset 1px 1px 0px -8px #fce2c1;
+ 	box-shadow:inset 1px 1px 0px -8px #fce2c1;
+}.btn_orange:hover {
+	background:-moz-linear-gradient( center top, #fb9e25 9%, #ffc477 96% );
+	background:-ms-linear-gradient( top, #fb9e25 9%, #ffc477 96% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(9%, #fb9e25), color-stop(96%, #ffc477) );
+	background-color:#fb9e25;
+}.btn_orange:active {
+	position:relative;
+	top:1px;
+}
+
 .nic_title h1 {display:none;}
 .bnBox p {display:none;}
 </style>
@@ -55,6 +87,10 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        
+        <div class="btn_orange" onclick="next();">
+          next
+        </div>
         
         <div class="bnBox">
         <p>1</p>
