@@ -19,7 +19,6 @@
         var nicJaElem = $('.nic_japanese').find('h1');
         var pElem = $('.bnBox').find('p');
         var count=pElem.length;//バナーの数を数えるよ。
-        alert(count);
         var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
         pElem.eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
         nicJaElem.eq(num).css({'display':'block'});
@@ -40,9 +39,9 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <div class='nic_japanese'>
-            <h1 class="nic_title">Nic1</h1>
-            <h1 class="nic_title">Nic2</h1>
-            <h1 class="nic_title">Nic3</h1>
+            <div class="nic_title">Nic1</div>
+            <div class="nic_title">Nic2</div>
+            <div class="nic_title">Nic3</div>
           </div>
         </header>
     </div>
