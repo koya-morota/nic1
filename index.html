@@ -8,7 +8,7 @@
 
 <style>
 .bnBox p {display:none;};
-.nic_japanese h1 {display:none;};
+.nic_title h1 {display:none;};
 </style>
 
 
@@ -16,7 +16,7 @@
     <script>
       
       function next(){
-        var nicJaElem = $('.nic_japanese').find('h1');
+        var nicJaElem = $('.nic_title').find('h1');
         var pElem = $('.bnBox').find('p');
         var count=pElem.length;//バナーの数を数えるよ。
         var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
@@ -37,10 +37,10 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner nic_japanese">
-            <div class="nic_title">Nic1</div>
-            <div class="nic_title">Nic2</div>
-            <div class="nic_title">Nic3</div>
+        <header class="inner nic_title">
+            <h1>Nic1</h1>
+            <h1>Nic2</h1>
+            <h1>Nic3</h1>
         </header>
     </div>
 
