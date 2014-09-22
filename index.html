@@ -43,12 +43,12 @@
 
 <script>
   
-  var count=$(this).find('bnBox p').length;//バナーの数を数えるよ。
+  var count=$(this).find('.bnBox p').length;//バナーの数を数えるよ。
   
   function next(){
   alert(count);
   var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
-  $(this).find('bnBox p').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
+  $(this).find('.bnBox p').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
   };
   
 $(next());
