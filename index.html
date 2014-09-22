@@ -35,10 +35,14 @@
     </div>
 
 
+<style>
+.bnBox p {display:none;}
+</style>
+
 <script>
 $('.bnBox').ready(function(){
-  varcount=$(this).find('p').length;//バナーの数を数えるよ。
-  varnum=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
+  var count=$(this).find('p').length;//バナーの数を数えるよ。
+  var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
   $(this).find('p').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
 });
 </script>
