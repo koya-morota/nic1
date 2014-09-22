@@ -9,8 +9,9 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
       
+      var pElem = $('.bnBox').find('p');
+
       function next(){
-        var pElem = $('.bnBox').find('p');
         var count=pElem.length;//バナーの数を数えるよ。
         alert(count);
         var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
@@ -20,6 +21,9 @@
     </script>
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<style>
+.bnBox p {display:none;}
+</style>
 
     <title>Nic1</title>
 
