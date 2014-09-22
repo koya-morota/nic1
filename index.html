@@ -42,11 +42,16 @@
 </style>
 
 <script>
-$('.bnBox').ready(function(){
   var count=$(this).find('p').length;//バナーの数を数えるよ。
+  
+  function next(){
   var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
   $(this).find('p').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
-});
+  }
+  
+$('.bnBox').ready(
+  next();
+  );
 </script>
 
   </body>
