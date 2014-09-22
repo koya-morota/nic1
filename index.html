@@ -10,10 +10,10 @@
     <script>
       
       function next(){
-        var count=$(this).find('p').length;//バナーの数を数えるよ。
+        var count=$(this).find('.bnBox').length;//バナーの数を数えるよ。
         alert(count);
         var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
-        $(this).find('p').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
+        $(this).find('.bnBox').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
       };
       
     </script>
@@ -37,7 +37,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         
-        <div id="nic" class="bnBox">
+        <div class="bnBox">
         <p>1</p>
         <p>2</p>
         <p>3</p>
