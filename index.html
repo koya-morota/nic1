@@ -8,7 +8,7 @@
 
 <style>
 .bnBox p {display:none;};
-.nic_title {display:none;};
+.nic_title h1 {display:none;};
 </style>
 
 
@@ -16,12 +16,13 @@
     <script>
       
       function next(){
+        var tElem = $('.nic_title').find('h1');
         var pElem = $('.bnBox').find('p');
         var count=pElem.length;//バナーの数を数えるよ。
         alert(count);
         var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
         pElem.eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
-        $.find('.nic_title').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
+        tElem.eq(num).css({'display':'block'});
         
       };
       
