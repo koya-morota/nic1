@@ -44,14 +44,14 @@
 <script>
   
   function next(){
-  var count=$(this).find('p').length;//バナーの数を数えるよ。
+  var count=$.find('p').length;//バナーの数を数えるよ。
   var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
-  $(this).find('p').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
+  alert(num);
+  $.find('p').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
   };
   
-$('.bnBox').ready(
-  next()
-  );
+$(next());
+
 </script>
 
   </body>
