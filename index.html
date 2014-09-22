@@ -7,7 +7,8 @@
     <meta name="description" content="Nic1 : ">
 
 <style>
-.bnBox p {display:none;}
+.bnBox p {display:none;};
+.nic_title {display:none;};
 </style>
 
 
@@ -20,6 +21,8 @@
         alert(count);
         var num=Math.floor(Math.random()*count);//ランダムの整数を作るよ。
         pElem.eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
+        $.find('.nic_title').eq(num).css({'display':'block'});//ランダムで取得した整数番目のバナーを表示するよ。
+        
       };
       
     </script>
@@ -35,7 +38,9 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <h1 id="project_title">Nic1</h1>
+          <h1 class="nic_title">Nic1</h1>
+          <h1 class="nic_title">Nic2</h1>
+          <h1 class="nic_title">Nic3</h1>
         </header>
     </div>
 
